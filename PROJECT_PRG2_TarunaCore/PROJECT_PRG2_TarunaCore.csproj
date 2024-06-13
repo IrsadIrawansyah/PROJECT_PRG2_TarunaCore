@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D794EAC-E99C-4BFD-81E4-759EA6FCE179}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PROJECT_PRG2_TarunaCore</RootNamespace>
+    <AssemblyName>PROJECT_PRG2_TarunaCore</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.Licensing.6.0.2\lib\net472\Bunifu.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.7.0.0\lib\net472\Bunifu.UI.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.1.5.3.2.0.0\lib\net452\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=110.2.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.110.2.0\lib\net471\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.CodeDom, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.CodeDom.8.0.0\lib\net462\System.CodeDom.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.7.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=7.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.7.0.2\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DashboardBendahara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardBendahara.Designer.cs">
+      <DependentUpon>DashboardBendahara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardKetua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardKetua.Designer.cs">
+      <DependentUpon>DashboardKetua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardSekretaris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardSekretaris.Designer.cs">
+      <DependentUpon>DashboardSekretaris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRUD\EditBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRUD\EditBarang.Designer.cs">
+      <DependentUpon>EditBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRUD\EditJenisBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRUD\EditJenisBarang.Designer.cs">
+      <DependentUpon>EditJenisBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRUD\EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRUD\EditUser.Designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRUD\EditWarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRUD\EditWarga.Designer.cs">
+      <DependentUpon>EditWarga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRUD\TambahBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRUD\TambahBarang.Designer.cs">
+      <DependentUpon>TambahBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRUD\TambahJenisBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRUD\TambahJenisBarang.Designer.cs">
+      <DependentUpon>TambahJenisBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRUD\TambahUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRUD\TambahUser.Designer.cs">
+      <DependentUpon>TambahUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRUD\TambahWarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRUD\TambahWarga.Designer.cs">
+      <DependentUpon>TambahWarga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masuk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masuk.Designer.cs">
+      <DependentUpon>Masuk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Starting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Starting.Designer.cs">
+      <DependentUpon>Starting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transaksi\TransaksiPeminjaman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaksi\TransaksiPeminjaman.Designer.cs">
+      <DependentUpon>TransaksiPeminjaman.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DashboardKetua.resx">
+      <DependentUpon>DashboardKetua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRUD\EditBarang.resx">
+      <DependentUpon>EditBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRUD\EditJenisBarang.resx">
+      <DependentUpon>EditJenisBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRUD\EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRUD\EditWarga.resx">
+      <DependentUpon>EditWarga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRUD\TambahBarang.resx">
+      <DependentUpon>TambahBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRUD\TambahJenisBarang.resx">
+      <DependentUpon>TambahJenisBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRUD\TambahUser.resx">
+      <DependentUpon>TambahUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRUD\TambahWarga.resx">
+      <DependentUpon>TambahWarga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masuk.resx">
+      <DependentUpon>Masuk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Starting.resx">
+      <DependentUpon>Starting.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon\Group 189.png" />
+    <Content Include="Icon\Group 191 %281%29.png" />
+    <Content Include="Icon\Group 191.png" />
+    <Content Include="Icon\Group 1911.png" />
+    <Content Include="Icon\home.png" />
+    <Content Include="Resources\314-3146431_cardboard-box-icon-box-vector-png.png" />
+    <Content Include="Resources\annotation-alert %281%29.png" />
+    <Content Include="Resources\annotation-alert.png" />
+    <Content Include="Resources\bell-3711884-3105237 %281%29.png" />
+    <Content Include="Resources\bell-ringing-03.png" />
+    <Content Include="Resources\board-meeting.png" />
+    <Content Include="Resources\book-3711904-3105257 %281%29.png" />
+    <Content Include="Resources\building.png" />
+    <Content Include="Resources\chevron-down %281%29.png" />
+    <Content Include="Resources\chevron-right %281%29.png" />
+    <Content Include="Resources\chevron-right.png" />
+    <Content Include="Resources\circle-user.png" />
+    <Content Include="Resources\Copyrights Kelompok4 %282%29.png" />
+    <Content Include="Resources\edit-05.png" />
+    <Content Include="Resources\eye-off.png" />
+    <Content Include="Resources\eye.png" />
+    <Content Include="Resources\fast-forward.png" />
+    <Content Include="Resources\file-02 %281%29.png" />
+    <Content Include="Resources\file-02 %282%29.png" />
+    <Content Include="Resources\file-02.png" />
+    <Content Include="Resources\file-021.png" />
+    <Content Include="Resources\file-download-03.png" />
+    <Content Include="Resources\file-user.png" />
+    <Content Include="Resources\Frame 1 %281%29.png" />
+    <Content Include="Resources\Frame 1 %282%29.png" />
+    <Content Include="Resources\Frame 1 %283%29.png" />
+    <Content Include="Resources\Frame 1.png" />
+    <Content Include="Resources\Frame 2.png" />
+    <Content Include="Resources\Frame 3.png" />
+    <Content Include="Resources\Frame 4.png" />
+    <Content Include="Resources\Frame 5 %281%29.png" />
+    <Content Include="Resources\Frame 5 %282%29.png" />
+    <Content Include="Resources\Frame 5 %282%291.png" />
+    <Content Include="Resources\Frame 5.png" />
+    <Content Include="Resources\Frame 6 %282%29.png" />
+    <Content Include="Resources\Frame 6 %283%29.png" />
+    <Content Include="Resources\Frame 6.png" />
+    <Content Include="Resources\Frame 7 %281%29.png" />
+    <Content Include="Resources\Frame 7 %282%29.png" />
+    <Content Include="Resources\Frame 7.png" />
+    <Content Include="Resources\Garis tiga.png" />
+    <Content Include="Resources\Group 192 %283%29.png" />
+    <Content Include="Resources\Group 198.png" />
+    <Content Include="Resources\Group 1981.png" />
+    <Content Include="Resources\Group 202.png" />
+    <Content Include="Resources\Group 203 %281%29.png" />
+    <Content Include="Resources\Group 203 %282%29.png" />
+    <Content Include="Resources\Group 203.png" />
+    <Content Include="Resources\Group 205 %282%29.png" />
+    <Content Include="Resources\Group 205 %283%29.png" />
+    <Content Include="Resources\Group 205.png" />
+    <Content Include="Resources\Group 206 %282%29.png" />
+    <Content Include="Resources\Group 206 %283%29.png" />
+    <Content Include="Resources\Group 208.png" />
+    <Content Include="Resources\Group 210 %281%29.png" />
+    <Content Include="Resources\Group 210 %282%29.png" />
+    <Content Include="Resources\Group 210.png" />
+    <Content Include="Resources\Group 2101.png" />
+    <Content Include="Resources\Group 2102.png" />
+    <Content Include="Resources\Group 211 %281%29.png" />
+    <Content Include="Resources\Group 211.png" />
+    <Content Include="Resources\Group 212 %281%29.png" />
+    <Content Include="Resources\Group 212.png" />
+    <Content Include="Resources\Group 217 %281%29.png" />
+    <Content Include="Resources\Group 218 %281%29.png" />
+    <Content Include="Resources\Group 219.png" />
+    <Content Include="Resources\Group 221.png" />
+    <Content Include="Resources\home %282%29.png" />
+    <Content Include="Resources\home-02 %281%29.png" />
+    <Content Include="Resources\home-02.png" />
+    <Content Include="Resources\home_.png" />
+    <Content Include="Resources\Icon %281%29.png" />
+    <Content Include="Resources\Icon.png" />
+    <Content Include="Resources\Icon1.png" />
+    <Content Include="Resources\info-circle.png" />
+    <Content Include="Resources\key-skeleton-left-right.png" />
+    <Content Include="Resources\log-out-04 %281%29.png" />
+    <Content Include="Resources\log-out-04 %281%291.png" />
+    <Content Include="Resources\log-out-04.png" />
+    <Content Include="Resources\log-out-041.png" />
+    <Content Include="Resources\Login Screen %281%29.png" />
+    <Content Include="Resources\Login Screen %281%291.png" />
+    <Content Include="Resources\logout.png" />
+    <Content Include="Resources\marker-pin-01.png" />
+    <Content Include="Resources\Masuk sebagai Admin_ %281%29.png" />
+    <Content Include="Resources\Masuk sebagai Admin_ %281%291.png" />
+    <Content Include="Resources\Masuk sebagai Mahasiswa_.png" />
+    <Content Include="Resources\menu-03.png" />
+    <Content Include="Resources\person-icon.png" />
+    <Content Include="Resources\picture.png" />
+    <Content Include="Resources\Rectangle 4185.png" />
+    <Content Include="Resources\replicate-prediction-hbkrlmbbej6naoencezjdncnz4 1.png" />
+    <Content Include="Resources\Ruangan2.png" />
+    <Content Include="Resources\Ruangan3.png" />
+    <Content Include="Resources\Ruangan4.png" />
+    <Content Include="Resources\Ruangan5.png" />
+    <Content Include="Resources\search-lg %281%29.png" />
+    <Content Include="Resources\search-lg %282%29.png" />
+    <Content Include="Resources\search-lg.png" />
+    <Content Include="Resources\security.png" />
+    <Content Include="Resources\send-01 %281%29.png" />
+    <Content Include="Resources\send-01.png" />
+    <Content Include="Resources\shape %281%29.png" />
+    <Content Include="Resources\shape.png" />
+    <Content Include="Resources\Simplify kebutuhan anda untuk meminjam akses ruangan Manajamen Informatika.png" />
+    <Content Include="Resources\skip-back %281%29.png" />
+    <Content Include="Resources\skip-back %282%29.png" />
+    <Content Include="Resources\skip-back.png" />
+    <Content Include="Resources\skip-forward %281%29.png" />
+    <Content Include="Resources\skip-forward %282%29.png" />
+    <Content Include="Resources\skip-forward.png" />
+    <Content Include="Resources\sned %281%29.png" />
+    <Content Include="Resources\TarunaCore.png" />
+    <Content Include="Resources\tool-01.png" />
+    <Content Include="Resources\trash-03.png" />
+    <Content Include="Resources\triangular-warning-sign.png" />
+    <Content Include="Resources\user-01.png" />
+    <Content Include="Resources\user-3711850-3105265 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FromView\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
