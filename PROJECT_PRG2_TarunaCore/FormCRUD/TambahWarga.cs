@@ -47,7 +47,7 @@ namespace PROJECT_PRG2_TarunaCore.FormCRUD
                     try
                     {
                         MemoryStream stream = new MemoryStream();
-                        pbFoto.Image.Save(stream, System.Drawing.Imaging.ImageFormat.Jpeg);
+                        //pbFoto.Image.Save(stream, System.Drawing.Imaging.ImageFormat.Jpeg);
                         byte[] pic = stream.ToArray();
 
                         connection.Open();
@@ -101,7 +101,7 @@ namespace PROJECT_PRG2_TarunaCore.FormCRUD
                         }
                         else
                         {
-                            pbFoto.Load(Filename);
+                          //  pbFoto.Load(Filename);
                         }
                     }
                 }

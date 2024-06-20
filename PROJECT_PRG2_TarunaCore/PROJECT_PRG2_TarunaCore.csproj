@@ -36,9 +36,6 @@
     <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.Licensing.6.0.2\lib\net472\Bunifu.Licensing.dll</HintPath>
     </Reference>
-    <Reference Include="Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bunifu.UI.WinForms.7.0.0\lib\net472\Bunifu.UI.WinForms.dll</HintPath>
-    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
@@ -125,6 +122,12 @@
     </Compile>
     <Compile Include="DashboardWarga.Designer.cs">
       <DependentUpon>DashboardWarga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCRUD\EditBarang.cs">
       <SubType>Form</SubType>
@@ -303,6 +306,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DashboardWarga.resx">
       <DependentUpon>DashboardWarga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCRUD\EditBarang.resx">
       <DependentUpon>EditBarang.cs</DependentUpon>

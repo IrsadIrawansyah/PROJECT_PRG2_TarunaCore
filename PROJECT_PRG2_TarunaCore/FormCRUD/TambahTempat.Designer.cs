@@ -33,6 +33,7 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.txtKapasitas = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbStatus = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtAlamat = new Guna.UI2.WinForms.Guna2TextBox();
@@ -47,7 +48,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtKapasitas = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel3.SuspendLayout();
@@ -117,11 +117,34 @@
             this.guna2Panel3.Controls.Add(this.label1);
             this.guna2Panel3.CustomBorderColor = System.Drawing.Color.White;
             this.guna2Panel3.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Panel3.Location = new System.Drawing.Point(244, 6);
+            this.guna2Panel3.Location = new System.Drawing.Point(244, -5);
             this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(539, 506);
+            this.guna2Panel3.Size = new System.Drawing.Size(543, 519);
             this.guna2Panel3.TabIndex = 20;
+            // 
+            // txtKapasitas
+            // 
+            this.txtKapasitas.BorderColor = System.Drawing.Color.Black;
+            this.txtKapasitas.BorderRadius = 10;
+            this.txtKapasitas.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtKapasitas.DefaultText = "";
+            this.txtKapasitas.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtKapasitas.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtKapasitas.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtKapasitas.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtKapasitas.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtKapasitas.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
+            this.txtKapasitas.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtKapasitas.Location = new System.Drawing.Point(242, 131);
+            this.txtKapasitas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtKapasitas.Name = "txtKapasitas";
+            this.txtKapasitas.PasswordChar = '\0';
+            this.txtKapasitas.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txtKapasitas.PlaceholderText = "";
+            this.txtKapasitas.SelectedText = "";
+            this.txtKapasitas.Size = new System.Drawing.Size(187, 32);
+            this.txtKapasitas.TabIndex = 17;
             // 
             // cbStatus
             // 
@@ -343,29 +366,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Formulir";
             // 
-            // txtKapasitas
-            // 
-            this.txtKapasitas.BorderColor = System.Drawing.Color.Black;
-            this.txtKapasitas.BorderRadius = 10;
-            this.txtKapasitas.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtKapasitas.DefaultText = "";
-            this.txtKapasitas.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtKapasitas.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtKapasitas.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtKapasitas.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtKapasitas.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtKapasitas.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
-            this.txtKapasitas.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtKapasitas.Location = new System.Drawing.Point(242, 131);
-            this.txtKapasitas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.txtKapasitas.Name = "txtKapasitas";
-            this.txtKapasitas.PasswordChar = '\0';
-            this.txtKapasitas.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txtKapasitas.PlaceholderText = "";
-            this.txtKapasitas.SelectedText = "";
-            this.txtKapasitas.Size = new System.Drawing.Size(187, 32);
-            this.txtKapasitas.TabIndex = 17;
-            // 
             // TambahTempat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -375,6 +375,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TambahTempat";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TambahTempat";
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

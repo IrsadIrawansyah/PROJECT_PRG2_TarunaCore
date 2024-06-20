@@ -60,10 +60,10 @@ namespace PROJECT_PRG2_TarunaCore
         private void KonfirmasiBoxAll_Load(object sender, EventArgs e)
         {
 
-            i = Program.koordinasiAwalY + 540;
-            this.Location = new Point(Program.koordinasiAwalX + 840, Program.koordinasiAwalY + 400);
-            /*  i = Program.koordinasiAwalY + 400;
-               this.Location = new Point(Program.koordinasiAwalX + 330, Program.koordinasiAwalY + 400);*/
+            /*   i = Program.koordinasiAwalY + 540;
+               this.Location = new Point(Program.koordinasiAwalX + 840, Program.koordinasiAwalY + 400);*/
+            i = Program.koordinasiAwalY  + 400;
+            this.Location = new Point(Program.koordinasiAwalX + 760, Program.koordinasiAwalY + 100);
 
         }
     }

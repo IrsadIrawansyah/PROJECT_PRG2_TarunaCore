@@ -90,16 +90,43 @@ namespace PROJECT_PRG2_TarunaCore
 
         private void btnLogOut_Click_1(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Anda Yakin Ingin Keluar?", "Information", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            /*DialogResult result = MessageBox.Show("Anda Yakin Ingin Keluar?", "Information", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
 
             // Log out if the user confirms
             if (result == DialogResult.OK)
             {
                 Login loginForm = new Login();
                 loginForm.Show();
-                this.Hide();
+                this.Hide();*/
 
+            Form modalBackground = new Form();
+            using (KonfirmasiBoxAll modal = new KonfirmasiBoxAll("Apakah anda yakin ingin keluar?"))
+            {
+                modalBackground.StartPosition = FormStartPosition.Manual;
+                modalBackground.FormBorderStyle = FormBorderStyle.None;
+                modalBackground.Opacity = .50d;
+                modalBackground.BackColor = Color.Black;
+                modalBackground.Size = this.Size;
+                modalBackground.Location = this.Location;
+                modalBackground.ShowInTaskbar = false;
+                modalBackground.Show();
+                modal.Owner = modalBackground;
+
+                Program.koordinasiAwalX = this.Location.X;
+                Program.koordinasiAwalY = this.Location.Y + 540;
+                Program.koordinasiAwalY_KonfirmasiBox = parentY;
+
+                modal.ShowDialog();
+                modalBackground.Dispose();
             }
+
+            if (Program.Box_Konfirmasi == 1)
+            {
+                Login login = new Login();
+                this.Close();
+                login.Show();
+            }
+
+        }
         }
     }
-}

@@ -27,7 +27,7 @@ namespace PROJECT_PRG2_TarunaCore.FromView
         {
             // dgvWarga.CellFormatting += dgvWarga_CellFormatting;
 
-            BindingSource bindingSource = new BindingSource();
+           /* BindingSource bindingSource = new BindingSource();
 
             try
             {
@@ -51,9 +51,9 @@ namespace PROJECT_PRG2_TarunaCore.FromView
             catch (Exception ex)
             {
                 Peringatan.Show(ex.Message, Peringatan.AlertType.error);
-            }
-
-           /* public void ConvertStatus()
+            }*/
+        
+        /*    public void ConvertStatus()
             {
                 foreach (DataGridViewRow row in dgvWarga.Rows)
                 {
@@ -70,10 +70,10 @@ namespace PROJECT_PRG2_TarunaCore.FromView
                 }
                 dgvWarga.Columns["statusString"].DisplayIndex = 2;
 
-            }*/
-
+            }
+            
+        }*/
         }
-    
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Anda Yakin Ingin Keluar?", "Information", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
@@ -89,10 +89,44 @@ namespace PROJECT_PRG2_TarunaCore.FromView
 
         private void DataRole_Load(object sender, EventArgs e)
         {
-         
+           /* if (Program.Login_role == "1")
+            {
+                btnTambahData.Visible = true;
+                dgvWarga.Columns["btnEdit"].Visible = false;
+                dgvWarga.Columns["btnDelete"].Visible = false;
+
+            }
+            else if (Program.Login_role == "2")
+            {
+                dgvWarga.Columns["btnEdit"].Visible = false;
+                dgvWarga.Columns["btnDelete"].Visible = false;
+
+            }
+            else if (Program.Login_role == "3")
+            {
+                dgvWarga.Columns["btnEdit"].Visible = false;
+                dgvWarga.Columns["btnDelete"].Visible = false;
+
+            }
+            else if (Program.Login_role == "4")
+            {
+                dgvWarga.Columns["btnEdit"].Visible = false;
+                dgvWarga.Columns["btnDelete"].Visible = false;
+
+            }
+            else if (Program.Login_role == "5")
+            {
+                dgvWarga.Columns["btnEdit"].Visible = false;
+                dgvWarga.Columns["btnDelete"].Visible = false;
+
+            }
+
+            dgvWarga.Columns["roleID"].Visible = false;
+            dgvWarga.Columns["status"].Visible = false;
+            DataGridViewColumn newColumn = new DataGridViewTextBoxColumn();
 
             // TODO: This line of code loads data into the 'tarunaCore.Role' table. You can move, or remove it, as needed.
-            this.roleTableAdapter.Fill(this.tarunaCore.Role);
+            this.roleTableAdapter.Fill(this.tarunaCore.Role);*/
             this.WindowState = FormWindowState.Maximized;
         }
 

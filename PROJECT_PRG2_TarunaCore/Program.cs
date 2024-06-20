@@ -33,7 +33,7 @@ namespace PROJECT_PRG2_TarunaCore
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Data_Warga());
+            Application.Run(new Masuk());
         }
     }
 }

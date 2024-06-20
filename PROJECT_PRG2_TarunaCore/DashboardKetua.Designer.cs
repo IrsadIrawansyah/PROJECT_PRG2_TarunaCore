@@ -270,9 +270,9 @@ namespace PROJECT_PRG2_TarunaCore
             this.btnLogOut.Location = new System.Drawing.Point(2, 2);
             this.btnLogOut.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(147, 31);
+            this.btnLogOut.Size = new System.Drawing.Size(136, 31);
             this.btnLogOut.TabIndex = 6;
-            this.btnLogOut.Text = "Log Out";
+            this.btnLogOut.Text = "Keluar";
             this.btnLogOut.UseTransparentBackground = true;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click_1);
             // 

@@ -51,7 +51,17 @@ namespace PROJECT_PRG2_TarunaCore
 
         private void btnMasuk_Click(object sender, EventArgs e)
         {
-   
+            if (txtNamaPengguna.Text == "KETUA" && txtKataSandi.Text == "polman")
+            {
+                DashboardKetua dashboard = new DashboardKetua();
+                dashboard.Show();
+                this.Hide();
+                Peringatan.Show("Login Berhasi! Selamat Datang "+ txtNamaPengguna.Text, Peringatan.AlertType.success);
+            }
+            else
+            {
+                Peringatan.Show("Username atau Password salah!", Peringatan.AlertType.error);
+            }
              /*   string username = txtNamaPengguna.Text;
                 string password = txtKataSandi.Text;
 
@@ -86,9 +96,7 @@ namespace PROJECT_PRG2_TarunaCore
                         }
                     }
                 }*/
-             DashboardKetua dashboard = new DashboardKetua();
-                dashboard.Show();
-                this.Hide();
+            
             }
 
         private void TampilPassword_Click(object sender, EventArgs e)
