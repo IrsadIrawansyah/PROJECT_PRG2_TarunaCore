@@ -40,16 +40,16 @@
             // 
             // guna2PictureBox1
             // 
-            this.guna2PictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2PictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2PictureBox1.BorderRadius = 25;
+            this.guna2PictureBox1.Enabled = false;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(-2, -2);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(1160, 807);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(1483, 839);
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.UseTransparentBackground = true;
@@ -61,14 +61,13 @@
             this.btnMasuk.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnMasuk.AutoRoundedCorners = true;
             this.btnMasuk.BackColor = System.Drawing.Color.Transparent;
-            this.btnMasuk.BorderRadius = 21;
-            this.btnMasuk.FillColor = System.Drawing.Color.White;
+            this.btnMasuk.BorderRadius = 33;
+            this.btnMasuk.FillColor = System.Drawing.Color.CadetBlue;
             this.btnMasuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
-            this.btnMasuk.ForeColor = System.Drawing.Color.CadetBlue;
-            this.btnMasuk.Location = new System.Drawing.Point(497, 547);
-            this.btnMasuk.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMasuk.ForeColor = System.Drawing.Color.White;
+            this.btnMasuk.Location = new System.Drawing.Point(691, 706);
             this.btnMasuk.Name = "btnMasuk";
-            this.btnMasuk.Size = new System.Drawing.Size(163, 45);
+            this.btnMasuk.Size = new System.Drawing.Size(181, 68);
             this.btnMasuk.TabIndex = 9;
             this.btnMasuk.Text = "Masuk";
             this.btnMasuk.UseTransparentBackground = true;
@@ -84,9 +83,10 @@
             this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(428, -35);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(626, 0);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(300, 282);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(321, 330);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 10;
             this.guna2PictureBox2.TabStop = false;
@@ -94,13 +94,14 @@
             // 
             // Masuk
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1160, 803);
+            this.ClientSize = new System.Drawing.Size(1483, 839);
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.btnMasuk);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Masuk";
             this.Text = "Masuk";
             this.Load += new System.EventHandler(this.Masuk_Load_1);

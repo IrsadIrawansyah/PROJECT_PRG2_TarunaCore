@@ -39,9 +39,6 @@
     <Reference Include="Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.UI.WinForms.7.0.0\lib\net472\Bunifu.UI.WinForms.dll</HintPath>
     </Reference>
-    <Reference Include="Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bunifu.UI.WinForms.1.5.3.2.0.0\lib\net452\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
-    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
@@ -98,6 +95,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlertType.cs" />
     <Compile Include="DashboardBendahara.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,11 +108,23 @@
     <Compile Include="DashboardKetua.Designer.cs">
       <DependentUpon>DashboardKetua.cs</DependentUpon>
     </Compile>
+    <Compile Include="DashboardKoordinator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardKoordinator.Designer.cs">
+      <DependentUpon>DashboardKoordinator.cs</DependentUpon>
+    </Compile>
     <Compile Include="DashboardSekretaris.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DashboardSekretaris.Designer.cs">
       <DependentUpon>DashboardSekretaris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardWarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardWarga.Designer.cs">
+      <DependentUpon>DashboardWarga.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCRUD\EditBarang.cs">
       <SubType>Form</SubType>
@@ -122,11 +132,35 @@
     <Compile Include="FormCRUD\EditBarang.Designer.cs">
       <DependentUpon>EditBarang.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCRUD\EditBerita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRUD\EditBerita.Designer.cs">
+      <DependentUpon>EditBerita.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCRUD\EditJenisBarang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormCRUD\EditJenisBarang.Designer.cs">
       <DependentUpon>EditJenisBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRUD\EditJenisKeluhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRUD\EditJenisKeluhan.Designer.cs">
+      <DependentUpon>EditJenisKeluhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRUD\EditRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRUD\EditRole.Designer.cs">
+      <DependentUpon>EditRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRUD\EditTempat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRUD\EditTempat.Designer.cs">
+      <DependentUpon>EditTempat.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCRUD\EditUser.cs">
       <SubType>Form</SubType>
@@ -146,11 +180,35 @@
     <Compile Include="FormCRUD\TambahBarang.Designer.cs">
       <DependentUpon>TambahBarang.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCRUD\TambahBeritacs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRUD\TambahBeritacs.Designer.cs">
+      <DependentUpon>TambahBeritacs.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCRUD\TambahJenisBarang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormCRUD\TambahJenisBarang.Designer.cs">
       <DependentUpon>TambahJenisBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRUD\TambahJenisKeluhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRUD\TambahJenisKeluhan.Designer.cs">
+      <DependentUpon>TambahJenisKeluhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRUD\TambahRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRUD\TambahRole.Designer.cs">
+      <DependentUpon>TambahRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCRUD\TambahTempat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCRUD\TambahTempat.Designer.cs">
+      <DependentUpon>TambahTempat.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCRUD\TambahUser.cs">
       <SubType>Form</SubType>
@@ -164,6 +222,36 @@
     <Compile Include="FormCRUD\TambahWarga.Designer.cs">
       <DependentUpon>TambahWarga.cs</DependentUpon>
     </Compile>
+    <Compile Include="FromView\DataRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromView\DataRole.Designer.cs">
+      <DependentUpon>DataRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FromView\DataUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromView\DataUser.Designer.cs">
+      <DependentUpon>DataUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FromView\DataWarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromView\DataWarga.Designer.cs">
+      <DependentUpon>DataWarga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KonfirmasiBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KonfirmasiBox.Designer.cs">
+      <DependentUpon>KonfirmasiBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KonfirmasiBoxAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KonfirmasiBoxAll.Designer.cs">
+      <DependentUpon>KonfirmasiBoxAll.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +264,12 @@
     <Compile Include="Masuk.Designer.cs">
       <DependentUpon>Masuk.cs</DependentUpon>
     </Compile>
+    <Compile Include="Peringatan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Peringatan.Designer.cs">
+      <DependentUpon>Peringatan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Starting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,20 +278,46 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TarunaCore.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TarunaCore.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Transaksi\TransaksiPeminjaman.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Transaksi\TransaksiPeminjaman.Designer.cs">
       <DependentUpon>TransaksiPeminjaman.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DashboardBendahara.resx">
+      <DependentUpon>DashboardBendahara.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DashboardKetua.resx">
       <DependentUpon>DashboardKetua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardKoordinator.resx">
+      <DependentUpon>DashboardKoordinator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardSekretaris.resx">
+      <DependentUpon>DashboardSekretaris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardWarga.resx">
+      <DependentUpon>DashboardWarga.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCRUD\EditBarang.resx">
       <DependentUpon>EditBarang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCRUD\EditBerita.resx">
+      <DependentUpon>EditBerita.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCRUD\EditJenisBarang.resx">
       <DependentUpon>EditJenisBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRUD\EditJenisKeluhan.resx">
+      <DependentUpon>EditJenisKeluhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRUD\EditTempat.resx">
+      <DependentUpon>EditTempat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCRUD\EditUser.resx">
       <DependentUpon>EditUser.cs</DependentUpon>
@@ -208,8 +328,20 @@
     <EmbeddedResource Include="FormCRUD\TambahBarang.resx">
       <DependentUpon>TambahBarang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCRUD\TambahBeritacs.resx">
+      <DependentUpon>TambahBeritacs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCRUD\TambahJenisBarang.resx">
       <DependentUpon>TambahJenisBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRUD\TambahJenisKeluhan.resx">
+      <DependentUpon>TambahJenisKeluhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRUD\TambahRole.resx">
+      <DependentUpon>TambahRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCRUD\TambahTempat.resx">
+      <DependentUpon>TambahTempat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCRUD\TambahUser.resx">
       <DependentUpon>TambahUser.cs</DependentUpon>
@@ -217,11 +349,29 @@
     <EmbeddedResource Include="FormCRUD\TambahWarga.resx">
       <DependentUpon>TambahWarga.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FromView\DataRole.resx">
+      <DependentUpon>DataRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromView\DataUser.resx">
+      <DependentUpon>DataUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromView\DataWarga.resx">
+      <DependentUpon>DataWarga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KonfirmasiBox.resx">
+      <DependentUpon>KonfirmasiBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KonfirmasiBoxAll.resx">
+      <DependentUpon>KonfirmasiBoxAll.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Masuk.resx">
       <DependentUpon>Masuk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Peringatan.resx">
+      <DependentUpon>Peringatan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -231,6 +381,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Starting.resx">
       <DependentUpon>Starting.cs</DependentUpon>
@@ -245,28 +396,49 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TarunaCore.xsc">
+      <DependentUpon>TarunaCore.xsd</DependentUpon>
+    </None>
+    <None Include="TarunaCore.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TarunaCore.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TarunaCore.xss">
+      <DependentUpon>TarunaCore.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Icon\abstract-shape %281%29.png" />
+    <Content Include="Icon\abstract-shape.png" />
     <Content Include="Icon\Group 189.png" />
     <Content Include="Icon\Group 191 %281%29.png" />
     <Content Include="Icon\Group 191.png" />
     <Content Include="Icon\Group 1911.png" />
     <Content Include="Icon\home.png" />
+    <Content Include="Icon\pengguna.png" />
+    <Content Include="Icon\profile-user.png" />
+    <Content Include="Icon\role.png" />
     <Content Include="Resources\314-3146431_cardboard-box-icon-box-vector-png.png" />
+    <Content Include="Resources\Add a subheading %284%29.png" />
     <Content Include="Resources\annotation-alert %281%29.png" />
     <Content Include="Resources\annotation-alert.png" />
     <Content Include="Resources\bell-3711884-3105237 %281%29.png" />
     <Content Include="Resources\bell-ringing-03.png" />
+    <Content Include="Resources\BGBiru.png" />
+    <Content Include="Resources\BGPutih.png" />
     <Content Include="Resources\board-meeting.png" />
     <Content Include="Resources\book-3711904-3105257 %281%29.png" />
+    <Content Include="Resources\boy.png" />
     <Content Include="Resources\building.png" />
     <Content Include="Resources\chevron-down %281%29.png" />
     <Content Include="Resources\chevron-right %281%29.png" />
     <Content Include="Resources\chevron-right.png" />
     <Content Include="Resources\circle-user.png" />
+    <Content Include="Resources\close.png" />
     <Content Include="Resources\Copyrights Kelompok4 %282%29.png" />
     <Content Include="Resources\edit-05.png" />
     <Content Include="Resources\eye-off.png" />
@@ -343,6 +515,7 @@
     <Content Include="Resources\Masuk sebagai Admin_ %281%291.png" />
     <Content Include="Resources\Masuk sebagai Mahasiswa_.png" />
     <Content Include="Resources\menu-03.png" />
+    <Content Include="Resources\minimize-sign.png" />
     <Content Include="Resources\person-icon.png" />
     <Content Include="Resources\picture.png" />
     <Content Include="Resources\Rectangle 4185.png" />
@@ -373,9 +546,7 @@
     <Content Include="Resources\triangular-warning-sign.png" />
     <Content Include="Resources\user-01.png" />
     <Content Include="Resources\user-3711850-3105265 %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="FromView\" />
+    <Content Include="Resources\WhatsApp Image 2024-06-07 at 13.51.26_ed74e592.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

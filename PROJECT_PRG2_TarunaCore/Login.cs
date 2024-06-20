@@ -18,7 +18,7 @@ namespace PROJECT_PRG2_TarunaCore
 
         private void Login_Load(object sender, EventArgs e)
         {
-            //this.WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void btnExit_Click(object sender, EventArgs e)

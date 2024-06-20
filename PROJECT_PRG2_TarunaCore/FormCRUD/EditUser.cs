@@ -12,8 +12,8 @@ namespace PROJECT_PRG2_TarunaCore.FormCRUD
 {
     public partial class EditUser : Form
     {
-        int i = 0;
-        int y = 0;
+        //int i = 0;
+        //int y = 0;
         // private object btnSubmit;
 
         public EditUser()

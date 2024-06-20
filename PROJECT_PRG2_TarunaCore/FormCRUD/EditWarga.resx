@@ -2092,7 +2092,7 @@
         NtAJzgzgnJ2dnf3/bfz4Jd29I3kAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="guna2PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbFoto.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCCAYAAAB8GMlFAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAA/7JJREFUeF7s/Qd4VNea5wt/M3dm7tz+5n4Teuabvrfn3jtfT8/9enqm4+nTJ/gk
@@ -3709,4 +3709,7 @@
         SUVORK5CYII=
 </value>
   </data>
+  <metadata name="Timer_FormWarga.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

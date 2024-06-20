@@ -30,55 +30,149 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TambahWarga));
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.txtStatus = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtAlamat = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTglLahir = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnBatal = new Guna.UI2.WinForms.Guna2Button();
             this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
             this.txtNIK = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtStatus = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtNomorHandphone = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtNamaWarga = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pbFoto = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnFoto = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPilihFoto = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.guna2Panel2.BackColor = System.Drawing.Color.White;
+            this.guna2Panel2.Controls.Add(this.txtStatus);
+            this.guna2Panel2.Controls.Add(this.label10);
+            this.guna2Panel2.Controls.Add(this.txtAlamat);
+            this.guna2Panel2.Controls.Add(this.txtTglLahir);
+            this.guna2Panel2.Controls.Add(this.label9);
             this.guna2Panel2.Controls.Add(this.btnExit);
             this.guna2Panel2.Controls.Add(this.btnBatal);
             this.guna2Panel2.Controls.Add(this.btnSubmit);
             this.guna2Panel2.Controls.Add(this.txtNIK);
             this.guna2Panel2.Controls.Add(this.label8);
-            this.guna2Panel2.Controls.Add(this.txtStatus);
             this.guna2Panel2.Controls.Add(this.label7);
-            this.guna2Panel2.Controls.Add(this.txtPassword);
-            this.guna2Panel2.Controls.Add(this.label6);
-            this.guna2Panel2.Controls.Add(this.txtUsername);
-            this.guna2Panel2.Controls.Add(this.label5);
             this.guna2Panel2.Controls.Add(this.txtNomorHandphone);
             this.guna2Panel2.Controls.Add(this.label4);
             this.guna2Panel2.Controls.Add(this.txtNamaWarga);
             this.guna2Panel2.Controls.Add(this.label3);
             this.guna2Panel2.Controls.Add(this.label2);
             this.guna2Panel2.Controls.Add(this.label1);
-            this.guna2Panel2.Location = new System.Drawing.Point(299, 3);
+            this.guna2Panel2.Location = new System.Drawing.Point(238, 2);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(704, 623);
+            this.guna2Panel2.Size = new System.Drawing.Size(547, 506);
             this.guna2Panel2.TabIndex = 1;
+            // 
+            // txtStatus
+            // 
+            this.txtStatus.BorderColor = System.Drawing.Color.Black;
+            this.txtStatus.BorderRadius = 10;
+            this.txtStatus.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtStatus.DefaultText = "";
+            this.txtStatus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtStatus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtStatus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStatus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStatus.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtStatus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStatus.Location = new System.Drawing.Point(256, 210);
+            this.txtStatus.Name = "txtStatus";
+            this.txtStatus.PasswordChar = '\0';
+            this.txtStatus.PlaceholderText = "";
+            this.txtStatus.SelectedText = "";
+            this.txtStatus.Size = new System.Drawing.Size(200, 36);
+            this.txtStatus.TabIndex = 22;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(267, 102);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(70, 20);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "Alamat:";
+            // 
+            // txtAlamat
+            // 
+            this.txtAlamat.BackColor = System.Drawing.Color.Transparent;
+            this.txtAlamat.BorderColor = System.Drawing.Color.Black;
+            this.txtAlamat.BorderRadius = 10;
+            this.txtAlamat.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAlamat.DefaultText = "";
+            this.txtAlamat.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtAlamat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtAlamat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAlamat.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAlamat.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAlamat.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
+            this.txtAlamat.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAlamat.Location = new System.Drawing.Point(262, 126);
+            this.txtAlamat.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtAlamat.Name = "txtAlamat";
+            this.txtAlamat.PasswordChar = '\0';
+            this.txtAlamat.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txtAlamat.PlaceholderText = "";
+            this.txtAlamat.SelectedText = "";
+            this.txtAlamat.Size = new System.Drawing.Size(194, 39);
+            this.txtAlamat.TabIndex = 20;
+            // 
+            // txtTglLahir
+            // 
+            this.txtTglLahir.BackColor = System.Drawing.Color.Transparent;
+            this.txtTglLahir.BorderColor = System.Drawing.Color.Black;
+            this.txtTglLahir.BorderRadius = 10;
+            this.txtTglLahir.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTglLahir.DefaultText = "";
+            this.txtTglLahir.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTglLahir.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTglLahir.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTglLahir.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTglLahir.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTglLahir.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
+            this.txtTglLahir.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTglLahir.Location = new System.Drawing.Point(15, 293);
+            this.txtTglLahir.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtTglLahir.Name = "txtTglLahir";
+            this.txtTglLahir.PasswordChar = '\0';
+            this.txtTglLahir.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txtTglLahir.PlaceholderText = "";
+            this.txtTglLahir.SelectedText = "";
+            this.txtTglLahir.Size = new System.Drawing.Size(194, 39);
+            this.txtTglLahir.TabIndex = 19;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(12, 270);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(128, 20);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Tanggal Lahir: ";
             // 
             // btnExit
             // 
@@ -91,52 +185,58 @@
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(633, 3);
+            this.btnExit.Location = new System.Drawing.Point(485, 0);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnExit.Size = new System.Drawing.Size(58, 26);
+            this.btnExit.Size = new System.Drawing.Size(60, 46);
             this.btnExit.TabIndex = 16;
             this.btnExit.UseTransparentBackground = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnBatal
             // 
-            this.btnBatal.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnBatal.BackColor = System.Drawing.Color.Transparent;
             this.btnBatal.BorderRadius = 10;
             this.btnBatal.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnBatal.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnBatal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnBatal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBatal.FillColor = System.Drawing.Color.LightGray;
-            this.btnBatal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBatal.FillColor = System.Drawing.Color.DimGray;
+            this.btnBatal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnBatal.ForeColor = System.Drawing.Color.White;
-            this.btnBatal.Location = new System.Drawing.Point(139, 548);
+            this.btnBatal.Location = new System.Drawing.Point(104, 436);
+            this.btnBatal.Margin = new System.Windows.Forms.Padding(2);
             this.btnBatal.Name = "btnBatal";
-            this.btnBatal.Size = new System.Drawing.Size(139, 45);
+            this.btnBatal.Size = new System.Drawing.Size(120, 46);
             this.btnBatal.TabIndex = 15;
             this.btnBatal.Text = "Batal";
             this.btnBatal.Click += new System.EventHandler(this.btnBatal_Click);
             // 
             // btnSubmit
             // 
-            this.btnSubmit.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnSubmit.BackColor = System.Drawing.Color.Transparent;
             this.btnSubmit.BorderRadius = 10;
             this.btnSubmit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSubmit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSubmit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSubmit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSubmit.FillColor = System.Drawing.SystemColors.Highlight;
+            this.btnSubmit.FillColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.Location = new System.Drawing.Point(371, 548);
+            this.btnSubmit.Location = new System.Drawing.Point(287, 436);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(2);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(180, 45);
+            this.btnSubmit.Size = new System.Drawing.Size(151, 46);
             this.btnSubmit.TabIndex = 14;
             this.btnSubmit.Text = "Tambah Warga";
+            this.btnSubmit.UseTransparentBackground = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // txtNIK
             // 
-            this.txtNIK.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtNIK.BackColor = System.Drawing.Color.Transparent;
+            this.txtNIK.BorderColor = System.Drawing.Color.Black;
             this.txtNIK.BorderRadius = 10;
             this.txtNIK.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNIK.DefaultText = "";
@@ -147,132 +247,44 @@
             this.txtNIK.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNIK.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
             this.txtNIK.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNIK.Location = new System.Drawing.Point(20, 155);
-            this.txtNIK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNIK.Location = new System.Drawing.Point(15, 126);
+            this.txtNIK.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtNIK.Name = "txtNIK";
             this.txtNIK.PasswordChar = '\0';
             this.txtNIK.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtNIK.PlaceholderText = "";
             this.txtNIK.SelectedText = "";
-            this.txtNIK.Size = new System.Drawing.Size(258, 48);
+            this.txtNIK.Size = new System.Drawing.Size(194, 39);
             this.txtNIK.TabIndex = 13;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(15, 126);
+            this.label8.Location = new System.Drawing.Point(11, 102);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(55, 25);
+            this.label8.Size = new System.Drawing.Size(43, 20);
             this.label8.TabIndex = 12;
             this.label8.Text = "NIK:";
-            // 
-            // txtStatus
-            // 
-            this.txtStatus.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtStatus.BorderRadius = 10;
-            this.txtStatus.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtStatus.DefaultText = "";
-            this.txtStatus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtStatus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtStatus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtStatus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtStatus.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStatus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtStatus.Location = new System.Drawing.Point(371, 255);
-            this.txtStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtStatus.Name = "txtStatus";
-            this.txtStatus.PasswordChar = '\0';
-            this.txtStatus.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txtStatus.PlaceholderText = "";
-            this.txtStatus.SelectedText = "";
-            this.txtStatus.Size = new System.Drawing.Size(258, 48);
-            this.txtStatus.TabIndex = 11;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(378, 226);
+            this.label7.Location = new System.Drawing.Point(267, 184);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(87, 25);
+            this.label7.Size = new System.Drawing.Size(72, 20);
             this.label7.TabIndex = 10;
             this.label7.Text = "Status: ";
             // 
-            // txtPassword
-            // 
-            this.txtPassword.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtPassword.BorderRadius = 10;
-            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.DefaultText = "";
-            this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Location = new System.Drawing.Point(371, 155);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '\0';
-            this.txtPassword.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txtPassword.PlaceholderText = "";
-            this.txtPassword.SelectedText = "";
-            this.txtPassword.Size = new System.Drawing.Size(258, 48);
-            this.txtPassword.TabIndex = 9;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(378, 126);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(113, 25);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Password:";
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtUsername.BorderRadius = 10;
-            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsername.DefaultText = "";
-            this.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Location = new System.Drawing.Point(20, 462);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.PasswordChar = '\0';
-            this.txtUsername.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txtUsername.PlaceholderText = "";
-            this.txtUsername.SelectedText = "";
-            this.txtUsername.Size = new System.Drawing.Size(258, 48);
-            this.txtUsername.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(15, 433);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(179, 25);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Nama Pengguna:";
-            // 
             // txtNomorHandphone
             // 
-            this.txtNomorHandphone.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtNomorHandphone.BackColor = System.Drawing.Color.Transparent;
+            this.txtNomorHandphone.BorderColor = System.Drawing.Color.Black;
             this.txtNomorHandphone.BorderRadius = 10;
             this.txtNomorHandphone.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNomorHandphone.DefaultText = "";
@@ -281,32 +293,34 @@
             this.txtNomorHandphone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNomorHandphone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNomorHandphone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNomorHandphone.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomorHandphone.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
             this.txtNomorHandphone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNomorHandphone.Location = new System.Drawing.Point(20, 364);
-            this.txtNomorHandphone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNomorHandphone.Location = new System.Drawing.Point(15, 364);
+            this.txtNomorHandphone.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtNomorHandphone.Name = "txtNomorHandphone";
             this.txtNomorHandphone.PasswordChar = '\0';
             this.txtNomorHandphone.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtNomorHandphone.PlaceholderText = "";
             this.txtNomorHandphone.SelectedText = "";
-            this.txtNomorHandphone.Size = new System.Drawing.Size(258, 48);
+            this.txtNomorHandphone.Size = new System.Drawing.Size(194, 39);
             this.txtNomorHandphone.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(15, 323);
+            this.label4.Location = new System.Drawing.Point(11, 341);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(199, 25);
+            this.label4.Size = new System.Drawing.Size(164, 20);
             this.label4.TabIndex = 4;
             this.label4.Text = "Nomor Handphone:";
             // 
             // txtNamaWarga
             // 
-            this.txtNamaWarga.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtNamaWarga.BackColor = System.Drawing.Color.Transparent;
+            this.txtNamaWarga.BorderColor = System.Drawing.Color.Black;
             this.txtNamaWarga.BorderRadius = 10;
             this.txtNamaWarga.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNamaWarga.DefaultText = "";
@@ -315,106 +329,114 @@
             this.txtNamaWarga.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNamaWarga.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNamaWarga.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNamaWarga.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNamaWarga.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
             this.txtNamaWarga.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNamaWarga.Location = new System.Drawing.Point(20, 255);
-            this.txtNamaWarga.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNamaWarga.Location = new System.Drawing.Point(15, 207);
+            this.txtNamaWarga.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtNamaWarga.Name = "txtNamaWarga";
             this.txtNamaWarga.PasswordChar = '\0';
             this.txtNamaWarga.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtNamaWarga.PlaceholderText = "";
             this.txtNamaWarga.SelectedText = "";
-            this.txtNamaWarga.Size = new System.Drawing.Size(258, 48);
+            this.txtNamaWarga.Size = new System.Drawing.Size(194, 39);
             this.txtNamaWarga.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(15, 226);
+            this.label3.Location = new System.Drawing.Point(11, 184);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(151, 25);
+            this.label3.Size = new System.Drawing.Size(122, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nama Warga: ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label2.Location = new System.Drawing.Point(15, 56);
+            this.label2.Location = new System.Drawing.Point(11, 46);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(220, 32);
+            this.label2.Size = new System.Drawing.Size(173, 26);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tambah Warga";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 27);
+            this.label1.Location = new System.Drawing.Point(11, 22);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 29);
+            this.label1.Size = new System.Drawing.Size(88, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Formulir";
             // 
-            // guna2PictureBox1
+            // pbFoto
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(63, 175);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(157, 160);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 15;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
+            this.pbFoto.BackColor = System.Drawing.Color.Transparent;
+            this.pbFoto.FillColor = System.Drawing.Color.Transparent;
+            this.pbFoto.Image = ((System.Drawing.Image)(resources.GetObject("pbFoto.Image")));
+            this.pbFoto.ImageRotate = 0F;
+            this.pbFoto.Location = new System.Drawing.Point(58, 165);
+            this.pbFoto.Margin = new System.Windows.Forms.Padding(2);
+            this.pbFoto.Name = "pbFoto";
+            this.pbFoto.Size = new System.Drawing.Size(163, 170);
+            this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbFoto.TabIndex = 15;
+            this.pbFoto.TabStop = false;
+            this.pbFoto.UseTransparentBackground = true;
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel1.BackgroundImage")));
-            this.guna2Panel1.Controls.Add(this.btnFoto);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
-            this.guna2Panel1.Location = new System.Drawing.Point(-1, 3);
+            this.guna2Panel1.Controls.Add(this.btnPilihFoto);
+            this.guna2Panel1.Controls.Add(this.pbFoto);
+            this.guna2Panel1.Location = new System.Drawing.Point(-1, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(294, 623);
+            this.guna2Panel1.Size = new System.Drawing.Size(239, 506);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // btnFoto
+            // btnPilihFoto
             // 
-            this.btnFoto.BorderRadius = 10;
-            this.btnFoto.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnFoto.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnFoto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnFoto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnFoto.FillColor = System.Drawing.Color.White;
-            this.btnFoto.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFoto.ForeColor = System.Drawing.Color.Black;
-            this.btnFoto.Location = new System.Drawing.Point(54, 413);
-            this.btnFoto.Name = "btnFoto";
-            this.btnFoto.Size = new System.Drawing.Size(180, 45);
-            this.btnFoto.TabIndex = 15;
-            this.btnFoto.Text = "Pilih foto";
+            this.btnPilihFoto.Animated = true;
+            this.btnPilihFoto.BackColor = System.Drawing.Color.Transparent;
+            this.btnPilihFoto.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(95)))), ((int)(((byte)(106)))));
+            this.btnPilihFoto.BorderRadius = 10;
+            this.btnPilihFoto.BorderThickness = 1;
+            this.btnPilihFoto.FillColor = System.Drawing.Color.White;
+            this.btnPilihFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.btnPilihFoto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(95)))), ((int)(((byte)(106)))));
+            this.btnPilihFoto.Location = new System.Drawing.Point(68, 375);
+            this.btnPilihFoto.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPilihFoto.Name = "btnPilihFoto";
+            this.btnPilihFoto.Size = new System.Drawing.Size(133, 39);
+            this.btnPilihFoto.TabIndex = 50;
+            this.btnPilihFoto.Text = "Pilih foto";
+            this.btnPilihFoto.Click += new System.EventHandler(this.btnPilihFoto_Click);
             // 
             // TambahWarga
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1002, 630);
+            this.ClientSize = new System.Drawing.Size(786, 512);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TambahWarga";
             this.Text = "TambahWarga";
             this.Load += new System.EventHandler(this.TambahWarga_Load);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -426,21 +448,21 @@
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox txtNamaWarga;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox txtPassword;
-        private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2TextBox txtUsername;
-        private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2TextBox txtNomorHandphone;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2TextBox txtNIK;
         private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox pbFoto;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Button btnFoto;
         private Guna.UI2.WinForms.Guna2Button btnSubmit;
         private Guna.UI2.WinForms.Guna2Button btnBatal;
         private Guna.UI2.WinForms.Guna2CircleButton btnExit;
+        private Guna.UI2.WinForms.Guna2Button btnPilihFoto;
+        private Guna.UI2.WinForms.Guna2TextBox txtTglLahir;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2TextBox txtAlamat;
         private Guna.UI2.WinForms.Guna2TextBox txtStatus;
     }
 }

@@ -366,10 +366,10 @@
         SUVORK5CYII=
 </value>
   </data>
-  <data name="guna2PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbFoto.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCCAYAAAB8GMlFAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAA/7JJREFUeF7s/Qd4VNea5wt/M3dm7tz+5n4Teuabvrfn3jtfT8/9enqm4+nTJ/gk
+        DAAACwwBP0AiyAAA/7JJREFUeF7s/Qd4VNea5wt/M3dm7tz+5n4Teuabvrfn3jtfT8/9enqm4+nTJ/gk
         x+Ocw3HOGWOwwQkbgw3GBJNMzjlnTA5CCJQQAoFAEkpEE00wIKlqh/f+/2vtVbVra0tIIEDAep/n9+yq
         UlWpatfe67ffFf9fNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzY
         sGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0b
@@ -1738,7 +1738,7 @@
   <data name="guna2Panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAR0AAAJoCAYAAABbbTWUAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAA/7JJREFUeF7svQd73MjRtc3f/j3ROeccNgflnEUxilGkSIkSJSrnuNn28/ZXp6oP
+        DAAACwwBP0AiyAAA/7JJREFUeF7svQd73MjRtc3f/j3ROeccNgflnEUxilGkSIkSJSrnuNn28/ZXp6oP
         cKaIobS2lrvrRV8+7gjMiIO+t6q6AYyUPvWpT33axtRDp0996tO2ph46fepTn7Y19dDpU5/6tK2ph06f
         +tSnbU09dPrUpz5ta+qh06c+9WlbUw+dPvWpT9uaeuj0qU992tbUQ6dPferTtqYeOn3qU5+2NfXQ6VOf
         +rStqYdOn/rUp21NPXT61Kc+bWvqodOnPvVpW1MPnT71qU/bmnro9KlPfdrW1EOnT33q07amHjp96lOf

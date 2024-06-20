@@ -55,17 +55,17 @@
             this.txtNamaPengguna.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNamaPengguna.FillColor = System.Drawing.Color.CadetBlue;
             this.txtNamaPengguna.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNamaPengguna.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
-            this.txtNamaPengguna.ForeColor = System.Drawing.Color.Black;
+            this.txtNamaPengguna.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.txtNamaPengguna.ForeColor = System.Drawing.Color.White;
             this.txtNamaPengguna.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNamaPengguna.Location = new System.Drawing.Point(159, 560);
-            this.txtNamaPengguna.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNamaPengguna.Location = new System.Drawing.Point(138, 500);
+            this.txtNamaPengguna.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtNamaPengguna.Name = "txtNamaPengguna";
             this.txtNamaPengguna.PasswordChar = '\0';
-            this.txtNamaPengguna.PlaceholderForeColor = System.Drawing.Color.White;
+            this.txtNamaPengguna.PlaceholderForeColor = System.Drawing.Color.Gainsboro;
             this.txtNamaPengguna.PlaceholderText = "Masukkan Username";
             this.txtNamaPengguna.SelectedText = "";
-            this.txtNamaPengguna.Size = new System.Drawing.Size(399, 86);
+            this.txtNamaPengguna.Size = new System.Drawing.Size(406, 86);
             this.txtNamaPengguna.TabIndex = 2;
             // 
             // txtKataSandi
@@ -80,17 +80,17 @@
             this.txtKataSandi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtKataSandi.FillColor = System.Drawing.Color.CadetBlue;
             this.txtKataSandi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtKataSandi.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKataSandi.ForeColor = System.Drawing.Color.Black;
+            this.txtKataSandi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
+            this.txtKataSandi.ForeColor = System.Drawing.Color.White;
             this.txtKataSandi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtKataSandi.Location = new System.Drawing.Point(159, 665);
-            this.txtKataSandi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtKataSandi.Location = new System.Drawing.Point(138, 617);
+            this.txtKataSandi.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtKataSandi.Name = "txtKataSandi";
             this.txtKataSandi.PasswordChar = '\0';
-            this.txtKataSandi.PlaceholderForeColor = System.Drawing.Color.White;
+            this.txtKataSandi.PlaceholderForeColor = System.Drawing.Color.Gainsboro;
             this.txtKataSandi.PlaceholderText = "Masukkan Kata Sandi";
             this.txtKataSandi.SelectedText = "";
-            this.txtKataSandi.Size = new System.Drawing.Size(399, 81);
+            this.txtKataSandi.Size = new System.Drawing.Size(406, 86);
             this.txtKataSandi.TabIndex = 3;
             this.txtKataSandi.TextChanged += new System.EventHandler(this.txtKataSandi_TextChanged);
             // 
@@ -98,14 +98,13 @@
             // 
             this.btnMasuk.AutoRoundedCorners = true;
             this.btnMasuk.BackColor = System.Drawing.Color.Transparent;
-            this.btnMasuk.BorderRadius = 30;
+            this.btnMasuk.BorderRadius = 33;
             this.btnMasuk.FillColor = System.Drawing.Color.CadetBlue;
             this.btnMasuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMasuk.ForeColor = System.Drawing.Color.White;
-            this.btnMasuk.Location = new System.Drawing.Point(253, 784);
-            this.btnMasuk.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMasuk.Location = new System.Drawing.Point(263, 749);
             this.btnMasuk.Name = "btnMasuk";
-            this.btnMasuk.Size = new System.Drawing.Size(202, 62);
+            this.btnMasuk.Size = new System.Drawing.Size(172, 68);
             this.btnMasuk.TabIndex = 10;
             this.btnMasuk.Text = "Masuk";
             this.btnMasuk.UseTransparentBackground = true;
@@ -116,9 +115,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(176, 280);
+            this.label3.Location = new System.Drawing.Point(193, 264);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(370, 54);
+            this.label3.Size = new System.Drawing.Size(303, 44);
             this.label3.TabIndex = 11;
             this.label3.Text = "Selamat Datang!";
             // 
@@ -128,9 +128,10 @@
             this.guna2PictureBox2.BorderRadius = 20;
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(40, 42);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(30, 34);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(618, 1023);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(637, 986);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 1;
             this.guna2PictureBox2.TabStop = false;
@@ -149,10 +150,11 @@
             this.btnMinimize.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimize.ForeColor = System.Drawing.Color.White;
             this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
-            this.btnMinimize.Location = new System.Drawing.Point(1687, 26);
+            this.btnMinimize.Location = new System.Drawing.Point(1791, 11);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(2);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnMinimize.Size = new System.Drawing.Size(61, 54);
+            this.btnMinimize.Size = new System.Drawing.Size(65, 44);
             this.btnMinimize.TabIndex = 13;
             this.btnMinimize.UseTransparentBackground = true;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
@@ -169,10 +171,11 @@
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnExit.ForeColor = System.Drawing.Color.Transparent;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(1728, 26);
+            this.btnExit.Location = new System.Drawing.Point(1860, 13);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnExit.Size = new System.Drawing.Size(80, 52);
+            this.btnExit.Size = new System.Drawing.Size(69, 42);
             this.btnExit.TabIndex = 20;
             this.btnExit.UseTransparentBackground = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -186,8 +189,9 @@
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, -1);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(2474, 1568);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(2781, 1596);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -197,23 +201,25 @@
             // 
             this.TampilPassword.BackColor = System.Drawing.Color.Transparent;
             this.TampilPassword.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.TampilPassword.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.TampilPassword.HoverState.ImageSize = new System.Drawing.Size(50, 50);
             this.TampilPassword.Image = ((System.Drawing.Image)(resources.GetObject("TampilPassword.Image")));
             this.TampilPassword.ImageOffset = new System.Drawing.Point(0, 0);
             this.TampilPassword.ImageRotate = 0F;
-            this.TampilPassword.Location = new System.Drawing.Point(486, 686);
+            this.TampilPassword.ImageSize = new System.Drawing.Size(50, 50);
+            this.TampilPassword.Location = new System.Drawing.Point(452, 631);
+            this.TampilPassword.Margin = new System.Windows.Forms.Padding(2);
             this.TampilPassword.Name = "TampilPassword";
-            this.TampilPassword.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.TampilPassword.Size = new System.Drawing.Size(72, 42);
+            this.TampilPassword.PressedState.ImageSize = new System.Drawing.Size(0, 0);
+            this.TampilPassword.Size = new System.Drawing.Size(92, 72);
             this.TampilPassword.TabIndex = 26;
             this.TampilPassword.UseTransparentBackground = true;
             this.TampilPassword.Click += new System.EventHandler(this.TampilPassword_Click);
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1903, 1222);
+            this.ClientSize = new System.Drawing.Size(1940, 991);
             this.Controls.Add(this.TampilPassword);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnMinimize);
@@ -224,6 +230,7 @@
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Login";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);

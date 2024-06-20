@@ -44,6 +44,7 @@ namespace PROJECT_PRG2_TarunaCore
             this.Hide();
             Login loginForm = new Login();
             loginForm.Show();
+          
         }
 
         private void Masuk_Load_1(object sender, EventArgs e)
