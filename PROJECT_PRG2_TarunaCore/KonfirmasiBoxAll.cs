@@ -66,6 +66,11 @@ namespace PROJECT_PRG2_TarunaCore
                this.Location = new Point(Program.koordinasiAwalX + 330, Program.koordinasiAwalY + 400);*/
 
         }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
