@@ -43,13 +43,6 @@ namespace PROJECT_PRG2_TarunaCore.FromView
             this.btnTambahData = new Guna.UI2.WinForms.Guna2Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.dgvWarga = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.iDNIKDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.namaWargaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tglLahirDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.alamatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nmrTeleponDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fotoDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.wargaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tarunaCore1 = new PROJECT_PRG2_TarunaCore.TarunaCore();
             this.wargaBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -72,6 +65,13 @@ namespace PROJECT_PRG2_TarunaCore.FromView
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.transisiWarga = new System.Windows.Forms.Timer(this.components);
+            this.iDNIKDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.namaWargaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tglLahirDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.alamatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nmrTeleponDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fotoDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvWarga)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wargaBindingSource1)).BeginInit();
@@ -120,7 +120,7 @@ namespace PROJECT_PRG2_TarunaCore.FromView
             this.btnMinimize.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimize.ForeColor = System.Drawing.Color.White;
             this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
-            this.btnMinimize.Location = new System.Drawing.Point(1340, -1);
+            this.btnMinimize.Location = new System.Drawing.Point(1327, 0);
             this.btnMinimize.Margin = new System.Windows.Forms.Padding(2);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -211,6 +211,7 @@ namespace PROJECT_PRG2_TarunaCore.FromView
             this.dgvWarga.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvWarga.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvWarga.AutoGenerateColumns = false;
+            this.dgvWarga.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dgvWarga.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
@@ -253,7 +254,7 @@ namespace PROJECT_PRG2_TarunaCore.FromView
             this.dgvWarga.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
             this.dgvWarga.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dgvWarga.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvWarga.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgvWarga.ThemeStyle.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dgvWarga.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.dgvWarga.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
             this.dgvWarga.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -271,55 +272,6 @@ namespace PROJECT_PRG2_TarunaCore.FromView
             this.dgvWarga.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvWarga.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvWarga_CellContentClick);
             this.dgvWarga.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvWarga_CellFormatting);
-            // 
-            // iDNIKDataGridViewTextBoxColumn
-            // 
-            this.iDNIKDataGridViewTextBoxColumn.DataPropertyName = "ID_NIK";
-            this.iDNIKDataGridViewTextBoxColumn.HeaderText = "ID_NIK";
-            this.iDNIKDataGridViewTextBoxColumn.Name = "iDNIKDataGridViewTextBoxColumn";
-            this.iDNIKDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // namaWargaDataGridViewTextBoxColumn
-            // 
-            this.namaWargaDataGridViewTextBoxColumn.DataPropertyName = "Nama_Warga";
-            this.namaWargaDataGridViewTextBoxColumn.HeaderText = "Nama_Warga";
-            this.namaWargaDataGridViewTextBoxColumn.Name = "namaWargaDataGridViewTextBoxColumn";
-            this.namaWargaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // tglLahirDataGridViewTextBoxColumn
-            // 
-            this.tglLahirDataGridViewTextBoxColumn.DataPropertyName = "Tgl_Lahir";
-            this.tglLahirDataGridViewTextBoxColumn.HeaderText = "Tgl_Lahir";
-            this.tglLahirDataGridViewTextBoxColumn.Name = "tglLahirDataGridViewTextBoxColumn";
-            this.tglLahirDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // alamatDataGridViewTextBoxColumn
-            // 
-            this.alamatDataGridViewTextBoxColumn.DataPropertyName = "Alamat";
-            this.alamatDataGridViewTextBoxColumn.HeaderText = "Alamat";
-            this.alamatDataGridViewTextBoxColumn.Name = "alamatDataGridViewTextBoxColumn";
-            this.alamatDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nmrTeleponDataGridViewTextBoxColumn
-            // 
-            this.nmrTeleponDataGridViewTextBoxColumn.DataPropertyName = "Nmr_Telepon";
-            this.nmrTeleponDataGridViewTextBoxColumn.HeaderText = "Nmr_Telepon";
-            this.nmrTeleponDataGridViewTextBoxColumn.Name = "nmrTeleponDataGridViewTextBoxColumn";
-            this.nmrTeleponDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // statusDataGridViewTextBoxColumn
-            // 
-            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
-            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
-            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // fotoDataGridViewImageColumn
-            // 
-            this.fotoDataGridViewImageColumn.DataPropertyName = "foto";
-            this.fotoDataGridViewImageColumn.HeaderText = "foto";
-            this.fotoDataGridViewImageColumn.Name = "fotoDataGridViewImageColumn";
-            this.fotoDataGridViewImageColumn.ReadOnly = true;
             // 
             // wargaBindingSource1
             // 
@@ -596,6 +548,55 @@ namespace PROJECT_PRG2_TarunaCore.FromView
             this.guna2PictureBox2.TabStop = false;
             this.guna2PictureBox2.UseTransparentBackground = true;
             // 
+            // iDNIKDataGridViewTextBoxColumn
+            // 
+            this.iDNIKDataGridViewTextBoxColumn.DataPropertyName = "ID_NIK";
+            this.iDNIKDataGridViewTextBoxColumn.HeaderText = "ID NIK";
+            this.iDNIKDataGridViewTextBoxColumn.Name = "iDNIKDataGridViewTextBoxColumn";
+            this.iDNIKDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // namaWargaDataGridViewTextBoxColumn
+            // 
+            this.namaWargaDataGridViewTextBoxColumn.DataPropertyName = "Nama_Warga";
+            this.namaWargaDataGridViewTextBoxColumn.HeaderText = "Nama Warga";
+            this.namaWargaDataGridViewTextBoxColumn.Name = "namaWargaDataGridViewTextBoxColumn";
+            this.namaWargaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tglLahirDataGridViewTextBoxColumn
+            // 
+            this.tglLahirDataGridViewTextBoxColumn.DataPropertyName = "Tgl_Lahir";
+            this.tglLahirDataGridViewTextBoxColumn.HeaderText = "Tgl Lahir";
+            this.tglLahirDataGridViewTextBoxColumn.Name = "tglLahirDataGridViewTextBoxColumn";
+            this.tglLahirDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // alamatDataGridViewTextBoxColumn
+            // 
+            this.alamatDataGridViewTextBoxColumn.DataPropertyName = "Alamat";
+            this.alamatDataGridViewTextBoxColumn.HeaderText = "Alamat";
+            this.alamatDataGridViewTextBoxColumn.Name = "alamatDataGridViewTextBoxColumn";
+            this.alamatDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nmrTeleponDataGridViewTextBoxColumn
+            // 
+            this.nmrTeleponDataGridViewTextBoxColumn.DataPropertyName = "Nmr_Telepon";
+            this.nmrTeleponDataGridViewTextBoxColumn.HeaderText = "Nmr Telepon";
+            this.nmrTeleponDataGridViewTextBoxColumn.Name = "nmrTeleponDataGridViewTextBoxColumn";
+            this.nmrTeleponDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
+            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fotoDataGridViewImageColumn
+            // 
+            this.fotoDataGridViewImageColumn.DataPropertyName = "foto";
+            this.fotoDataGridViewImageColumn.HeaderText = "foto";
+            this.fotoDataGridViewImageColumn.Name = "fotoDataGridViewImageColumn";
+            this.fotoDataGridViewImageColumn.ReadOnly = true;
+            // 
             // Data_Warga
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -645,13 +646,6 @@ namespace PROJECT_PRG2_TarunaCore.FromView
         private System.Windows.Forms.BindingSource wargaBindingSource;
         private TarunaCoreTableAdapters.WargaTableAdapter wargaTableAdapter1;
         private System.Windows.Forms.BindingSource wargaBindingSource1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDNIKDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn namaWargaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tglLahirDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn alamatDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nmrTeleponDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewImageColumn fotoDataGridViewImageColumn;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel6;
         private Guna.UI2.WinForms.Guna2Button btnBeranda;
@@ -669,5 +663,12 @@ namespace PROJECT_PRG2_TarunaCore.FromView
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private System.Windows.Forms.Timer transisiWarga;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDNIKDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn namaWargaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tglLahirDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn alamatDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nmrTeleponDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewImageColumn fotoDataGridViewImageColumn;
     }
 }
