@@ -100,7 +100,7 @@
             this.btnMasuk.BackColor = System.Drawing.Color.Transparent;
             this.btnMasuk.BorderRadius = 33;
             this.btnMasuk.FillColor = System.Drawing.Color.CadetBlue;
-            this.btnMasuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMasuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.btnMasuk.ForeColor = System.Drawing.Color.White;
             this.btnMasuk.Location = new System.Drawing.Point(263, 749);
             this.btnMasuk.Name = "btnMasuk";

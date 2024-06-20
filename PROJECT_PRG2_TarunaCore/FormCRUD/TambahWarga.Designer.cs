@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TambahWarga));
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.txtStatus = new Guna.UI2.WinForms.Guna2TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtAlamat = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtTglLahir = new Guna.UI2.WinForms.Guna2TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnBatal = new Guna.UI2.WinForms.Guna2Button();
             this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
             this.txtNIK = new Guna.UI2.WinForms.Guna2TextBox();
@@ -47,15 +47,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.White;
-            this.guna2Panel2.Controls.Add(this.panel1);
+            this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
+            this.guna2Panel2.Controls.Add(this.btnExit);
+            this.guna2Panel2.Controls.Add(this.pictureBox1);
             this.guna2Panel2.Controls.Add(this.txtStatus);
             this.guna2Panel2.Controls.Add(this.label10);
             this.guna2Panel2.Controls.Add(this.txtAlamat);
@@ -78,6 +82,26 @@
             this.guna2Panel2.Size = new System.Drawing.Size(1173, 616);
             this.guna2Panel2.TabIndex = 1;
             // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExit.FillColor = System.Drawing.Color.Transparent;
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(1080, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnExit.Size = new System.Drawing.Size(91, 68);
+            this.btnExit.TabIndex = 16;
+            this.btnExit.UseTransparentBackground = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // txtStatus
             // 
             this.txtStatus.BorderColor = System.Drawing.Color.Black;
@@ -92,6 +116,7 @@
             this.txtStatus.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStatus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtStatus.Location = new System.Drawing.Point(473, 156);
+            this.txtStatus.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.PasswordChar = '\0';
             this.txtStatus.PlaceholderText = "";
@@ -125,7 +150,7 @@
             this.txtAlamat.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAlamat.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.txtAlamat.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAlamat.Location = new System.Drawing.Point(473, 382);
+            this.txtAlamat.Location = new System.Drawing.Point(472, 382);
             this.txtAlamat.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtAlamat.Multiline = true;
             this.txtAlamat.Name = "txtAlamat";
@@ -171,26 +196,6 @@
             this.label9.Size = new System.Drawing.Size(128, 20);
             this.label9.TabIndex = 18;
             this.label9.Text = "Tanggal Lahir: ";
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnExit.FillColor = System.Drawing.Color.Transparent;
-            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(260, 0);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnExit.Size = new System.Drawing.Size(91, 68);
-            this.btnExit.TabIndex = 16;
-            this.btnExit.UseTransparentBackground = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnBatal
             // 
@@ -376,13 +381,27 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Formulir";
             // 
-            // panel1
+            // guna2PictureBox1
             // 
-            this.panel1.Controls.Add(this.btnExit);
-            this.panel1.Location = new System.Drawing.Point(822, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(350, 618);
-            this.panel1.TabIndex = 23;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(807, 147);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(352, 364);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 24;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.pictureBox1.Location = new System.Drawing.Point(798, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(375, 616);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
             // 
             // TambahWarga
             // 
@@ -398,7 +417,8 @@
             this.Load += new System.EventHandler(this.TambahWarga_Load);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -422,6 +442,7 @@
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2TextBox txtAlamat;
         private Guna.UI2.WinForms.Guna2TextBox txtStatus;
-        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
