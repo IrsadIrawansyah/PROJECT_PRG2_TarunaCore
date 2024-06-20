@@ -48,9 +48,10 @@
             this.btnYakin.FillColor = System.Drawing.Color.CornflowerBlue;
             this.btnYakin.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnYakin.ForeColor = System.Drawing.Color.White;
-            this.btnYakin.Location = new System.Drawing.Point(237, 173);
+            this.btnYakin.Location = new System.Drawing.Point(284, 176);
+            this.btnYakin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnYakin.Name = "btnYakin";
-            this.btnYakin.Size = new System.Drawing.Size(139, 57);
+            this.btnYakin.Size = new System.Drawing.Size(144, 54);
             this.btnYakin.TabIndex = 6;
             this.btnYakin.Text = "Yakin";
             this.btnYakin.Click += new System.EventHandler(this.btnYakin_Click);
@@ -65,9 +66,10 @@
             this.btnBatal.FillColor = System.Drawing.SystemColors.ControlDark;
             this.btnBatal.Font = new System.Drawing.Font("Segoe UI", 15.75F);
             this.btnBatal.ForeColor = System.Drawing.Color.White;
-            this.btnBatal.Location = new System.Drawing.Point(28, 173);
+            this.btnBatal.Location = new System.Drawing.Point(59, 176);
+            this.btnBatal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBatal.Name = "btnBatal";
-            this.btnBatal.Size = new System.Drawing.Size(130, 57);
+            this.btnBatal.Size = new System.Drawing.Size(144, 54);
             this.btnBatal.TabIndex = 5;
             this.btnBatal.Text = "Batal";
             this.btnBatal.Click += new System.EventHandler(this.btnBatal_Click);
@@ -80,33 +82,37 @@
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(152, 12);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(180, 27);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(101, 96);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(127, 102);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 9;
             this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // messege
             // 
             this.messege.AutoSize = true;
             this.messege.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.messege.Location = new System.Drawing.Point(24, 118);
+            this.messege.Location = new System.Drawing.Point(32, 145);
+            this.messege.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.messege.Name = "messege";
-            this.messege.Size = new System.Drawing.Size(0, 24);
+            this.messege.Size = new System.Drawing.Size(0, 29);
             this.messege.TabIndex = 10;
             // 
             // KonfirmasiBoxAll
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(422, 242);
+            this.ClientSize = new System.Drawing.Size(492, 267);
             this.Controls.Add(this.messege);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.btnYakin);
             this.Controls.Add(this.btnBatal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "KonfirmasiBoxAll";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "KonfirmasiBoxAll";
