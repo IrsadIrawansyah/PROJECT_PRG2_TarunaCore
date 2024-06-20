@@ -293,7 +293,7 @@
             this.txtNomorHandphone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNomorHandphone.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomorHandphone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNomorHandphone.Location = new System.Drawing.Point(473, 261);
+            this.txtNomorHandphone.Location = new System.Drawing.Point(472, 261);
             this.txtNomorHandphone.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtNomorHandphone.Name = "txtNomorHandphone";
             this.txtNomorHandphone.PasswordChar = '\0';
